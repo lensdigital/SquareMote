@@ -15,7 +15,7 @@ These are main features of the device:
 - Small size (5×5 cm)
 - Two 14 pin headers that allow access to all AVR pins
 - External power header
-- 
+ 
 Initially this device was meant to be a remote weather sensor for my Xronos Clocks, but it grew into something more.
 
 No need for bulky headers or wires, just insert 3V coin cell battery and drop this sensor where you want to monitor temperature/humidity. Of course it’s not waterproof, so you can’t technically “drop” it anywhere outside.
