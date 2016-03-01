@@ -24,9 +24,8 @@ Long battery life was top priority and under ideal conditions #Mote2 can run for
 
 Few hardware “tricks” were used to lower power usage.
 
-Battery bypass for Linear Voltage Regulator.
-This provides most power saving, as Voltage Regulator created huge drain for power sources below 3.3V
-ATmega328p running at 8Mhz.
+- Battery bypass for Linear Voltage Regulator. This provides most power saving, as Voltage Regulator created huge drain for power sources below 3.3V
+- ATmega328p running at 8Mhz.
 This reduced power drain, and also allows chip to run at voltages as low as 1.8V
-TH02 sensor power disconnect.
+- TH02 sensor power disconnect.
 Temperature and Humidity Sensor’s (TH02) VCC connected to ATMega’s digial pin, allowing to switch sensor on and off at will
