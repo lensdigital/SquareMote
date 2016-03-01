@@ -19,3 +19,14 @@ These are main features of the device:
 Initially this device was meant to be a remote weather sensor for my Xronos Clocks, but it grew into something more.
 
 No need for bulky headers or wires, just insert 3V coin cell battery and drop this sensor where you want to monitor temperature/humidity. Of course it’s not waterproof, so you can’t technically “drop” it anywhere outside.
+
+Long battery life was top priority and under ideal conditions #Mote2 can run for about a year without needing new battery. Of course it all depends on ambient temperature, and frequency of updates.  Cold is battery’s worst enemy and slashes it’s life significantly. However in warmer months (from April to November) I had a sensor outside sending updates every 5 minutes without seeing end to battery life in near future.
+
+Few hardware “tricks” were used to lower power usage.
+
+Battery bypass for Linear Voltage Regulator.
+This provides most power saving, as Voltage Regulator created huge drain for power sources below 3.3V
+ATmega328p running at 8Mhz.
+This reduced power drain, and also allows chip to run at voltages as low as 1.8V
+TH02 sensor power disconnect.
+Temperature and Humidity Sensor’s (TH02) VCC connected to ATMega’s digial pin, allowing to switch sensor on and off at will
